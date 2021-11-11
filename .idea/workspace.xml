@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a626506-3d9d-4cf4-a42d-da98af9c4f89" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Kyrsach" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="20EKkMp14dbY2NW2Ds74tAmNbtq" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\R0maNga\IdeaProjects\Kyrsach\server" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a626506-3d9d-4cf4-a42d-da98af9c4f89" name="Default Changelist" comment="" />
+      <created>1635604448266</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635604448266</updated>
+      <workItem from="1635604451053" duration="369000" />
+      <workItem from="1635604889045" duration="1047000" />
+      <workItem from="1635605951881" duration="371000" />
+      <workItem from="1635606340009" duration="2053000" />
+      <workItem from="1635690518842" duration="1077000" />
+      <workItem from="1635691617847" duration="16501000" />
+      <workItem from="1635771465379" duration="3897000" />
+      <workItem from="1635776615099" duration="3108000" />
+      <workItem from="1635795256551" duration="10000" />
+      <workItem from="1635856064072" duration="3422000" />
+      <workItem from="1635882410416" duration="6488000" />
+      <workItem from="1635888938804" duration="2335000" />
+      <workItem from="1635960534873" duration="6000" />
+      <workItem from="1636027930680" duration="15526000" />
+      <workItem from="1636117055231" duration="4076000" />
+      <workItem from="1636122585879" duration="8331000" />
+      <workItem from="1636204314085" duration="3379000" />
+      <workItem from="1636208529150" duration="9707000" />
+      <workItem from="1636301082582" duration="3968000" />
+      <workItem from="1636307128040" duration="2672000" />
+      <workItem from="1636311277248" duration="1155000" />
+      <workItem from="1636312466078" duration="1118000" />
+      <workItem from="1636313861846" duration="281000" />
+      <workItem from="1636376574916" duration="3405000" />
+      <workItem from="1636643038680" duration="8194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
