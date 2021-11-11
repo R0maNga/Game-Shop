@@ -28,7 +28,10 @@ export  default  class GameStore{
             {id:2, name:"Silent Hill", price: 20, rating: 5, img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngkey.com%2Fpngs%2Fsilent-hill%2F&psig=AOvVaw1-pz-nCiRulkgzWiolSiBJ&ust=1636292580075000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiviYfvg_QCFQAAAAAdAAAAABAD'},
             {id:3, name:"Silent Hill", price: 20, rating: 5, img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngkey.com%2Fpngs%2Fsilent-hill%2F&psig=AOvVaw1-pz-nCiRulkgzWiolSiBJ&ust=1636292580075000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiviYfvg_QCFQAAAAAdAAAAABAD'},
             {id:4, name:"Silent Hill", price: 20, rating: 5, img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngkey.com%2Fpngs%2Fsilent-hill%2F&psig=AOvVaw1-pz-nCiRulkgzWiolSiBJ&ust=1636292580075000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiviYfvg_QCFQAAAAAdAAAAABAD'},
-            {id:5, name:"Silent Hill", price: 20, rating: 5, img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngkey.com%2Fpngs%2Fsilent-hill%2F&psig=AOvVaw1-pz-nCiRulkgzWiolSiBJ&ust=1636292580075000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiviYfvg_QCFQAAAAAdAAAAABAD'}
+            {id:5, name:"Silent Hill", price: 20, rating: 5, img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngkey.com%2Fpngs%2Fsilent-hill%2F&psig=AOvVaw1-pz-nCiRulkgzWiolSiBJ&ust=1636292580075000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiviYfvg_QCFQAAAAAdAAAAABAD'},
+            {id:6, name:"Silent Hill", price: 20, rating: 5, img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngkey.com%2Fpngs%2Fsilent-hill%2F&psig=AOvVaw1-pz-nCiRulkgzWiolSiBJ&ust=1636292580075000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiviYfvg_QCFQAAAAAdAAAAABAD'},
+            {id:7, name:"Silent Hill", price: 20, rating: 5, img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngkey.com%2Fpngs%2Fsilent-hill%2F&psig=AOvVaw1-pz-nCiRulkgzWiolSiBJ&ust=1636292580075000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiviYfvg_QCFQAAAAAdAAAAABAD'},
+
         ]
         this._selectedGenre={}
         this._selectedDeveloper={}

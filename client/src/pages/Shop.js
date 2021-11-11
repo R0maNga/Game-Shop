@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 /*import TypeBar from "../components/TypeBar";*/
 import TypeBar from "../components/TypeBar";
 import DeveloperBar from "../components/DeveloperBar";
+import GameList from "../components/GameList";
 
 const Shop = () => {
     return (
@@ -15,6 +16,7 @@ const Shop = () => {
                 </Col>
                 <Col md={9}>
                       <DeveloperBar/>
+                      <GameList/>
                 </Col>
             </Row>
         </Container>
