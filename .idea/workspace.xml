@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a626506-3d9d-4cf4-a42d-da98af9c4f89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/DeveloperBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/DeveloperBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/GamePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/GamePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/GameStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/GameStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/UserStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/UserStore.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +93,9 @@
       <workItem from="1636313861846" duration="281000" />
       <workItem from="1636376574916" duration="3405000" />
       <workItem from="1636643038680" duration="8194000" />
-      <workItem from="1636654868057" duration="6120000" />
+      <workItem from="1636654868057" duration="6224000" />
+      <workItem from="1636721650383" duration="8398000" />
+      <workItem from="1636740310649" duration="1886000" />
     </task>
     <servers />
   </component>
@@ -108,7 +107,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
