@@ -10,7 +10,7 @@ class GenreController{
     }
     async getAll(req,res){
 
-            const  genre = await  Type.findAll()
+            const  genre = await  Genre.findAll()
             return  res.json(genre)
     }
 

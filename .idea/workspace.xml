@@ -4,9 +4,22 @@
     <list default="true" id="6a626506-3d9d-4cf4-a42d-da98af9c4f89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateDeveloper.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateDeveloper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateGenre.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateGenre.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/GameStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/GameStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/store/UserStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/UserStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/developerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/developerController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/gameController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/gameController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/genreController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/genreController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/genreRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/genreRouter.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +108,15 @@
       <workItem from="1636643038680" duration="8194000" />
       <workItem from="1636654868057" duration="6224000" />
       <workItem from="1636721650383" duration="8398000" />
-      <workItem from="1636740310649" duration="1886000" />
+      <workItem from="1636740310649" duration="2462000" />
+      <workItem from="1636783781049" duration="409000" />
+      <workItem from="1636784221932" duration="1975000" />
+      <workItem from="1636787853769" duration="72000" />
+      <workItem from="1636795390430" duration="93000" />
+      <workItem from="1636903323821" duration="91000" />
+      <workItem from="1636983732392" duration="5094000" />
+      <workItem from="1637006194945" duration="3898000" />
+      <workItem from="1637132096619" duration="7047000" />
     </task>
     <servers />
   </component>

@@ -10,7 +10,7 @@ class DeveloperController{
 
     }
     async getAll(req,res){
-      const  developer = await  Type.findAll()
+      const  developer = await  Developer.findAll()
         return  res.json(developer)
     }
 

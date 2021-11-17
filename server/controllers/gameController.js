@@ -4,9 +4,9 @@ const {Game} = require('../models/models')
 const ApiError = require('../error/ApiError')
 
 class GameController{
-     async create(req, res){
+     async create(req, res, next){
          try{
-             const{name, price, genreId, developerId, platformId} = req.body
+             let{name, price, genreId, developerId, platformId} = req.body
              const {img} = req.files
              let filename = uuid.v4() + ".jpg"
              img.mv(path.resolve(__dirname, '..', 'static', filename))
@@ -21,7 +21,7 @@ class GameController{
 
     }
     async getAll(req,res){
-         const {genreId, developerId, limit, page}= req.body
+         let {genreId, developerId, limit, page}= req.query
         page = page || 1
         limit = limit || 9
         let offset = page * limit - limit

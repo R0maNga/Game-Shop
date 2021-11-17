@@ -12,7 +12,7 @@ const CreateDeveloper = ({show, onHide}) => {
             onHide={onHide}
             centered
         >
-            <Modal.Header closeButton>
+            <Modal.Header >
                 <Modal.Title id="contained-modal-title-vcenter">
                     Добавить разработчика
                 </Modal.Title>

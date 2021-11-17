@@ -8,7 +8,7 @@ const CreateGenre = ({show, onHide}) => {
             onHide={onHide}
             centered
         >
-            <Modal.Header closeButton>
+            <Modal.Header>
                 <Modal.Title id="contained-modal-title-vcenter">
                     Добавить жанр
                 </Modal.Title>
