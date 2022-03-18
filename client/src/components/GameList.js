@@ -5,13 +5,17 @@ import GameItems from "./GameItems";
 import {Row} from "react-bootstrap";
 
 const GameList = observer(() => {
-    const {game}= useContext(Context)
+    const {game} = useContext(Context)
+    console.log(game.games)
     return (
         <Row className="d-flex">
-            {game.games.map(game =>
-            <GameItems key={game.id} game={game}/>
+            {game.games.map(game => {
+                    console.log(game)
+                    return <GameItems key={game.id} game={game}/>
+
+                }
             )}
-            
+
         </Row>
     );
 });

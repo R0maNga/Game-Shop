@@ -40,18 +40,23 @@ const Auth = observer(() => {
 
     return (
         <Container
-            className = "d-flex justify-content-center align-items-center"
+            className = "d-flex justify-content-center align-items-center "
             style = {{height:window.innerHeight-54}}
             >
 
-            <Card style={{width:500}} className="p-5 bg-info ">
+            <Card style={{width:500}} className="p-5 bg-info rounded ">
                 <h2 className="m-auto">{isLogin ? 'Авторизация': "Регистрация"} </h2>
                 <Form className ="d-flex flex-column">
                     <Form.Control
                         className="mt-2"
                         placeholder="Введите email..."
                         value={email}
-                        onChange ={e=> setEmail(e.target.value)}
+                        onChange ={e=>
+                        {
+                          //  if(e.target.value.length>=8 && e.target.value.length<=40)
+                                setEmail(e.target.value)}
+                        }
+                            min={8}
                         />
 
                     <Form.Control

@@ -5,6 +5,13 @@ import {Card} from "react-bootstrap";
 
 const DeveloperBar = observer(()  => {
     const {game}= useContext(Context)
+    const selectDeveloper = (developer) => {
+        if(game.selectedDeveloper.name===developer.name) {
+            game.setSelectedDeveloper({})
+        } else {
+            game.setSelectedDeveloper(developer)
+        }
+    }
     return (
         <div className="d-flex flex-row" >
             {game.developers.map(developer =>
@@ -12,7 +19,7 @@ const DeveloperBar = observer(()  => {
                     style={{cursor:'pointer'}}
                     key={developer.id}
                     className="p-2"
-                    onClick={()=> game.setSelectedDeveloper(developer)}
+                    onClick={selectDeveloper.bind(this, developer)}
                     border = {developer.id === game.selectedDeveloper.id ? 'danger':'light'}
                 >
                     {developer.name}

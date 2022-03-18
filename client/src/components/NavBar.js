@@ -1,15 +1,18 @@
 import React, {useContext} from 'react';
 import {Context} from "../index";
-import {ADMIN_ROUTE, LOGIN_ROUTE, SHOP_ROUTE} from "../utils/consts";
+import {ADMIN_ROUTE, BASKET_ROUTE, LOGIN_ROUTE, SHOP_ROUTE} from "../utils/consts";
 import {NavLink} from "react-router-dom";
 import {Button, Container, Nav, Navbar} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import {useHistory} from 'react-router-dom'
+import jwt_decode from "jwt-decode";
 
 
 const NavBar = observer (() => {
     const {user} = useContext(Context)
     const history = useHistory()
+    let a = localStorage.getItem('token')
+    let b = jwt_decode(a)
 
     const logOut = ()=>{
         user.setUser({})
@@ -22,15 +25,30 @@ const NavBar = observer (() => {
                 <NavLink className="text-decoration-none" style={{color:'black'}} to={SHOP_ROUTE}>300$ GAMES</NavLink>
                 {user.isAuth ?
                     <Nav className="ml-auto" style={{color: 'white'}}>
-                        <Button
+                        {b.role ==="ADMIN" ?<Button
                             variant={"outline-light"}
                             onClick={() => history.push(ADMIN_ROUTE)}
+
                         >
                             Aдмин панель
+                        </Button> : ""}
+
+
+                        <Button
+
+                            variant={"outline-light"}
+                            onClick={() => history.push(BASKET_ROUTE)}
+                            className="ms-4"
+                        >
+                            Корзина
+
                         </Button>
                         <Button
-                            variant={"outline-light"}
-                            onClick={() => logOut()}
+                            variant={"outline-dark"}
+                            onClick={() => {
+                                logOut()
+                                history.push(SHOP_ROUTE)
+                            } }
                             className="ms-4"
                         >
                             Выйти

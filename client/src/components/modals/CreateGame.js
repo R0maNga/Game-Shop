@@ -1,10 +1,26 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {Button, Col, Dropdown, Form, Modal, Row} from "react-bootstrap";
 import {Context} from "../../index";
+import {createGame, fetchDevelopers, fetchGames, fetchGenres, fetchPlatform} from "../../http/deviceAPI";
+import {observer} from "mobx-react-lite";
 
-const CreateGame = ({show,onHide}) => {
+const CreateGame = observer(({show,onHide}) => {
     const {game} = useContext(Context)
+    const [name, setName] = useState('')
+    const [price, setPrice] = useState(0)
+    const [file, setFile] = useState(null)
+    const [genre, setGenre] = useState(null)
+    const [developer, setDeveloper] = useState(null)
+    const [platform, setPlatform] = useState(null)
     const [info, setInfo] = useState([])
+
+    useEffect(()=>{
+        fetchGenres().then(data => game.setGenres(data))
+        fetchDevelopers().then(data => game.setDevelopers(data))
+        fetchPlatform().then(data=>game.setPlatforms(data))
+
+
+    },[])
 
     const addInfo =()=>{
         setInfo ([...info,{title:'', description:'', number:Date.now()}])
@@ -12,6 +28,23 @@ const CreateGame = ({show,onHide}) => {
     }
     const removeInfo =(number)=>{
         setInfo (info.filter(i=> i.number !==number))
+    }
+    const selectFile = e =>{
+        setFile(e.target.files[0])
+    }
+
+    const addGame = () =>{
+        console.log(game.selectedGenre, game.selectedDeveloper,game.selectedPlatform)
+        const formData = new FormData()
+        formData.append('name', name)
+        formData.append('price', `${price}`)
+        formData.append('img', file)
+        formData.append('genreId', game.selectedGenre.id)
+        formData.append('developerId', game.selectedDeveloper.id)
+        formData.append('gamePlatformId', game.selectedPlatform.id)
+        console.log(formData)
+        createGame(formData).then(data => onHide())
+
 
     }
     return (
@@ -28,27 +61,54 @@ const CreateGame = ({show,onHide}) => {
             <Modal.Body>
                 <Form>
                     <Dropdown className="mt-2 mb-2">
-                        <Dropdown.Toggle>Выберите жанр </Dropdown.Toggle>
+                        <Dropdown.Toggle> {game.selectedGenre.name || "Выберите жанр"} </Dropdown.Toggle>
                         <Dropdown.Menu>
                             {game.genres.map(genre =>
-                                <Dropdown.Item key = {genre.id}>{genre.name}</Dropdown.Item>
+                                <Dropdown.Item
+                                    onClick={()=> game.setSelectedGenre(genre)}
+                                    key = {genre.id}
+                                >
+                                    {genre.name}
+                                </Dropdown.Item>
                             )}
                         </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown className="mt-2 mb-2">
-                        <Dropdown.Toggle>Выберите разработчика </Dropdown.Toggle>
+                        <Dropdown.Toggle>{game.selectedDeveloper.name || "Выберите разработчика"} </Dropdown.Toggle>
                         <Dropdown.Menu>
                             {game.developers.map(developer =>
-                                <Dropdown.Item key = {developer.id}>{developer.name}</Dropdown.Item>
+                                <Dropdown.Item
+                                    onClick = {()=> game.setSelectedDeveloper(developer)}
+                                    key={developer.id}
+                                >
+                                    {developer.name}
+                                </Dropdown.Item>
+                            )}
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    <Dropdown className="mt-2 mb-2">
+                        <Dropdown.Toggle> {game.selectedPlatform.platform_name|| "Выберите платформу"} </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            {game.platforms.map(platform =>
+                                <Dropdown.Item
+                                    onClick={()=> game.setSelectedPlatform(platform)}
+                                    key = {platform.id}
+                                >
+                                    {platform.platform_name}
+                                </Dropdown.Item>
                             )}
                         </Dropdown.Menu>
                     </Dropdown>
                     <Form.Control
+                        value={name}
+                        onChange = {e=> setName(e.target.value)}
                         className="mt-3"
                         placeholder = "Введите название игры"
 
                     />
                     <Form.Control
+                        value={price}
+                        onChange = {e=> setPrice(Number(e.target.value))}
                         className="mt-3"
                         placeholder = "Введите стоимомть игры"
                         type="number"
@@ -57,6 +117,7 @@ const CreateGame = ({show,onHide}) => {
                     <Form.Control
                         className="mt-3"
                         type="file"
+                        onChange={selectFile}
 
                     />
                     <hr/>
@@ -94,8 +155,6 @@ const CreateGame = ({show,onHide}) => {
                         </Row>
 
 
-
-
                     )}
 
 
@@ -104,10 +163,10 @@ const CreateGame = ({show,onHide}) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
-                <Button variant="outline-success" onClick={onHide}>Добавить</Button>
+                <Button variant="outline-success" onClick={addGame}>Добавить</Button>
             </Modal.Footer>
         </Modal>
     );
-};
+});
 
 export default CreateGame;

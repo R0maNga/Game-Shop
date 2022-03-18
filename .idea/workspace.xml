@@ -4,28 +4,60 @@
     <list default="true" id="6a626506-3d9d-4cf4-a42d-da98af9c4f89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/DeveloperBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/DeveloperBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/GameItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GameItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/GameList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GameList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TypeBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/TypeBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateDeveloper.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateDeveloper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateGame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateGenre.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateGenre.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/http/deviceAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http/deviceAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/http/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http/userAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Basket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/GamePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/GamePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Shop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/store/GameStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/GameStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/store/UserStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/UserStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/developerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/developerController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/gameController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/gameController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/genreController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/genreController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/platformController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/platformController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/models.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/developerRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/developerRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/gameRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/gameRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/genreRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/genreRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/platformRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/platformRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/userRouter.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Kyrsach" />
@@ -47,12 +79,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/online-store-full-course-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -70,6 +103,16 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="GamePage.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="GamePage.js" working-dir="$PROJECT_DIR$/client/src/pages">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.GamePage.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -116,7 +159,44 @@
       <workItem from="1636903323821" duration="91000" />
       <workItem from="1636983732392" duration="5094000" />
       <workItem from="1637006194945" duration="3898000" />
-      <workItem from="1637132096619" duration="7047000" />
+      <workItem from="1637132096619" duration="7653000" />
+      <workItem from="1637243101313" duration="5333000" />
+      <workItem from="1637416448549" duration="4291000" />
+      <workItem from="1637421883744" duration="14579000" />
+      <workItem from="1637445619541" duration="1826000" />
+      <workItem from="1637586662880" duration="3063000" />
+      <workItem from="1637592599425" duration="9911000" />
+      <workItem from="1637617046944" duration="3111000" />
+      <workItem from="1637658290679" duration="2382000" />
+      <workItem from="1637671404991" duration="146000" />
+      <workItem from="1637671703990" duration="8006000" />
+      <workItem from="1637936339759" duration="3562000" />
+      <workItem from="1637997489513" duration="267000" />
+      <workItem from="1638019244195" duration="28179000" />
+      <workItem from="1638110171184" duration="15607000" />
+      <workItem from="1638136668769" duration="11537000" />
+      <workItem from="1638193628963" duration="38353000" />
+      <workItem from="1638482857530" duration="14000" />
+      <workItem from="1638524822485" duration="8139000" />
+      <workItem from="1638552881515" duration="71808000" />
+      <workItem from="1638986522795" duration="34410000" />
+      <workItem from="1639090975643" duration="11505000" />
+      <workItem from="1639172154142" duration="2100000" />
+      <workItem from="1639222339054" duration="27705000" />
+      <workItem from="1639510853861" duration="1129000" />
+      <workItem from="1639519248808" duration="1929000" />
+      <workItem from="1639555770792" duration="3979000" />
+      <workItem from="1639663003412" duration="452000" />
+      <workItem from="1639663838046" duration="12393000" />
+      <workItem from="1639682271745" duration="3361000" />
+      <workItem from="1639686628836" duration="2199000" />
+      <workItem from="1639689754371" duration="5892000" />
+      <workItem from="1640889283902" duration="236000" />
+      <workItem from="1643135300863" duration="94000" />
+      <workItem from="1643467585088" duration="30000" />
+      <workItem from="1643473698545" duration="55000" />
+      <workItem from="1647284041428" duration="87000" />
+      <workItem from="1647550119003" duration="276000" />
     </task>
     <servers />
   </component>

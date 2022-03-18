@@ -1,11 +1,17 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Button, Form, Modal} from "react-bootstrap";
+import {createDeveloper} from "../../http/deviceAPI";
 
 
 const CreateDeveloper = ({show, onHide}) => {
-    useEffect(()=>{
-        console.log(1)
-    },[])
+    const [value, setValue] = useState('')
+    const addDeveloper = ()=>{
+        createDeveloper({name:value}).then(data => {
+            setValue('')
+            onHide()
+        })
+
+    }
     return (
         <Modal
             show={show}
@@ -20,15 +26,15 @@ const CreateDeveloper = ({show, onHide}) => {
             <Modal.Body>
                 <Form>
                     <Form.Control
-                        /*value={value}
-                        onChange={e => setValue(e.target.value)}*/
+                        value={value}
+                        onChange={e => setValue(e.target.value)}
                         placeholder={"Введите имя разработчика"}
                     />
                 </Form>
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
-                <Button variant="outline-success" onClick={onHide}>Добавить</Button>
+                <Button variant="outline-success" onClick={addDeveloper}>Добавить</Button>
             </Modal.Footer>
         </Modal>
     );

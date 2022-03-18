@@ -2,6 +2,8 @@ const jwt = require('jsonwebtoken')
 const ApiError = require('../error/ApiError')
 const bcrypt = require('bcrypt')
 const {User, Basket} = require('../models/models')
+const express = require('express');
+const session = require('express-session')
 
 const generateJWT = (id, email, role)=>{
     return jwt.sign({id, email, role},
@@ -9,6 +11,8 @@ const generateJWT = (id, email, role)=>{
         {expiresIn: '24h'}
     )
 }
+
+
 
 class UserController{
    async registration(req,res){
@@ -47,6 +51,16 @@ class UserController{
        const token = generateJWT(req.user.id, req.user.email, req.user.role)
        return res.json({token})
    }
+
+
+
+    async getOne(req, res)
+    { const {id} = req.params
+        const user = await User.findOne(
+            {where:{id}}
+        )
+        return res.json(user)
+    }
 }
 
 module.exports= new UserController()
